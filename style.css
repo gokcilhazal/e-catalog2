@@ -1,0 +1,581 @@
+
+:root {
+    --cream: #F9F5F0;
+    --paper: #F2EAE2;
+    --rose: #C99498;
+    --rose-light: #E8CDD0;
+    --brown: #735D55;
+    --dark: #42332F;
+    --muted: #A49388;
+    --gold: #B99A70;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 10% 15%, #E9D5D3 0, transparent 25%),
+        radial-gradient(circle at 90% 85%, #E8DCCF 0, transparent 25%),
+        #E9E0D8;
+    color: var(--dark);
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* HEADER */
+
+.top-header {
+    width: 100%;
+    padding: 24px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    text-decoration: none;
+    color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 5px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.brand small {
+    font-size: 9px;
+    text-align: center;
+    letter-spacing: 6px;
+    color: var(--rose);
+    margin-top: 4px;
+}
+
+.header-label {
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: var(--muted);
+}
+
+.download-btn {
+    border: 1px solid var(--rose);
+    background: transparent;
+    color: var(--brown);
+    padding: 12px 20px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    transition: .3s;
+}
+
+.download-btn:hover {
+    background: var(--rose);
+    color: white;
+}
+
+.download-btn span {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+/* CATALOG */
+
+.catalog-container {
+    width: 100%;
+    padding: 30px 20px 50px;
+}
+
+.catalog-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.eyebrow {
+    font-size: 9px;
+    letter-spacing: 4px;
+    color: var(--rose);
+}
+
+.catalog-heading h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(36px, 5vw, 54px);
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.catalog-heading p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 17px;
+    color: var(--muted);
+}
+
+/* BOOK AREA */
+
+.book-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    perspective: 1800px;
+    width: 100%;
+}
+
+.book {
+    position: relative;
+    width: 440px;
+    height: 590px;
+    background: var(--paper);
+    box-shadow: 0 25px 65px rgba(68, 48, 39, .22);
+}
+
+.page {
+    background: var(--cream);
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #E6D9CE;
+}
+
+.page-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 38px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background:
+        radial-gradient(circle at 0% 0%, rgba(231, 205, 207, .20), transparent 30%),
+        var(--cream);
+}
+
+.page-inner::before {
+    content: "✿";
+    position: absolute;
+    top: 12px;
+    right: 17px;
+    color: var(--rose-light);
+    font-size: 23px;
+    opacity: .8;
+}
+
+.page-number {
+    position: absolute;
+    top: 18px;
+    left: 22px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+/* COVER */
+
+.cover-page {
+    background: #EDE0D9;
+    padding: 17px;
+}
+
+.cover-frame {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(159, 115, 112, .55);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 28px 20px;
+    background: #F6EEE8;
+}
+
+.cover-top,
+.cover-bottom {
+    font-size: 8px;
+    letter-spacing: 4px;
+    color: var(--brown);
+}
+
+.cover-image {
+    width: 72%;
+    height: 43%;
+    margin-top: 35px;
+    overflow: hidden;
+    border-radius: 48% 48% 4px 4px;
+    border: 5px solid rgba(255,255,255,.75);
+    box-shadow: 0 8px 25px rgba(83, 58, 51, .13);
+}
+
+.cover-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cover-title {
+    text-align: center;
+    margin-top: 27px;
+}
+
+.cover-title > span:first-child {
+    font-size: 9px;
+    letter-spacing: 5px;
+    color: var(--muted);
+}
+
+.cover-title h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 64px;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--rose);
+    line-height: 1;
+    margin: 5px 0 12px;
+}
+
+.cover-brand {
+    font-size: 10px;
+    letter-spacing: 5px;
+    color: var(--dark);
+}
+
+.cover-bottom {
+    position: absolute;
+    bottom: 23px;
+}
+
+/* INTRODUCTION */
+
+.introduction-page h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1.05;
+    margin: 22px 0 18px;
+}
+
+.intro-image {
+    width: 65%;
+    height: 190px;
+    overflow: hidden;
+    border-radius: 100px 100px 4px 4px;
+    border: 5px solid white;
+    box-shadow: 0 7px 20px rgba(80, 55, 50, .12);
+}
+
+.intro-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.introduction-page p {
+    max-width: 285px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--brown);
+    margin-top: 20px;
+}
+
+/* PRODUCTS */
+
+.product-page {
+    padding-top: 40px;
+}
+
+.product-image {
+    width: 66%;
+    height: 275px;
+    margin-top: 28px;
+    padding: 7px;
+    border: 1px solid #E7D6CE;
+    background: white;
+    box-shadow: 0 9px 25px rgba(77, 54, 47, .09);
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.product-page h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 31px;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--brown);
+    margin-top: 17px;
+}
+
+.product-page p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    line-height: 1.45;
+    color: var(--muted);
+    max-width: 280px;
+    margin-top: 7px;
+}
+
+.product-price {
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: var(--rose);
+    margin-top: 12px;
+}
+
+/* FOOTER */
+
+.page-footer {
+    position: absolute;
+    bottom: 17px;
+    font-size: 8px;
+    letter-spacing: 3px;
+    color: var(--muted);
+}
+
+/* BACK COVER */
+
+.back-cover {
+    background: #EDE0D9;
+    padding: 17px;
+}
+
+.back-cover-inner {
+    height: 100%;
+    border: 1px solid rgba(159, 115, 112, .55);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+    background: #F6EEE8;
+}
+
+.back-cover-inner h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 42px;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--rose);
+    margin: 20px 0;
+}
+
+.back-cover-flower {
+    width: 52%;
+    height: 180px;
+    padding: 5px;
+    border: 1px solid var(--rose-light);
+    border-radius: 100px 100px 5px 5px;
+    overflow: hidden;
+}
+
+.back-cover-flower img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.back-cover-inner h3 {
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-top: 23px;
+}
+
+.back-cover-inner p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--muted);
+    margin-top: 10px;
+}
+
+/* BUTTONS */
+
+.nav-btn {
+    border: 1px solid rgba(115, 93, 85, .35);
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.5);
+    color: var(--brown);
+    transition: .3s;
+    flex-shrink: 0;
+}
+
+.nav-btn:hover {
+    background: var(--rose);
+    color: white;
+}
+
+.catalog-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.control-btn {
+    background: transparent;
+    border: none;
+    color: var(--brown);
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+.page-indicator {
+    width: 120px;
+    text-align: center;
+    font-size: 11px;
+    color: var(--brown);
+}
+
+.progress-track {
+    height: 2px;
+    background: #D6C7BD;
+    margin-top: 8px;
+}
+
+#progressBar {
+    width: 11.11%;
+    height: 100%;
+    background: var(--rose);
+    transition: width .3s;
+}
+
+.catalog-hint {
+    text-align: center;
+    color: var(--muted);
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 7%;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: var(--muted);
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .top-header {
+        padding: 17px 5%;
+    }
+
+    .brand {
+        font-size: 15px;
+    }
+
+    .brand small {
+        font-size: 7px;
+    }
+
+    .header-label {
+        display: none;
+    }
+
+    .download-btn {
+        padding: 10px 12px;
+        font-size: 8px;
+    }
+
+    .catalog-container {
+        padding: 25px 10px 35px;
+    }
+
+    .catalog-heading {
+        margin-bottom: 25px;
+    }
+
+    .catalog-heading h1 {
+        font-size: 38px;
+    }
+
+    .book-area {
+        gap: 5px;
+    }
+
+    .book {
+        width: min(78vw, 360px);
+        height: min(108vw, 490px);
+    }
+
+    .nav-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 11px;
+    }
+
+    .page-inner {
+        padding: 32px 20px;
+    }
+
+    .cover-title h2 {
+        font-size: 48px;
+    }
+
+    .cover-image {
+        height: 38%;
+    }
+
+    .introduction-page h2 {
+        font-size: 27px;
+    }
+
+    .intro-image {
+        height: 145px;
+        width: 72%;
+    }
+
+    .introduction-page p {
+        font-size: 14px;
+    }
+
+    .product-image {
+        width: 72%;
+        height: 40%;
+        margin-top: 25px;
+    }
+
+    .product-page h2 {
+        font-size: 25px;
+    }
+
+    .product-page p {
+        font-size: 13px;
+    }
+
+    .product-price {
+        font-size: 11px;
+    }
+
+    .catalog-controls {
+        gap: 15px;
+        margin-top: 23px;
+    }
+
+    .catalog-hint {
+        font-size: 9px;
+        padding: 0 15px;
+    }
+
+    .site-footer {
+        font-size: 7px;
+        padding: 20px 5%;
+    }
+}

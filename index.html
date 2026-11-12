@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Violans Flowers | Floral Collection 2026</title>
+
+    <meta name="description" content="Violans Flowers özel çiçek koleksiyonu dijital kataloğu.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @media print {
+            @page {
+                size: 440px 590px;
+                margin: 0;
+            }
+
+            body * {
+                visibility: hidden !important;
+            }
+
+            #pdfPrintArea,
+            #pdfPrintArea * {
+                visibility: visible !important;
+            }
+
+            #pdfPrintArea {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 440px;
+            }
+
+            #pdfPrintArea .page {
+                width: 440px !important;
+                height: 590px !important;
+                display: block !important;
+                position: relative !important;
+                transform: none !important;
+                box-shadow: none !important;
+                break-after: page;
+                page-break-after: always;
+            }
+
+            #pdfPrintArea img {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="background-decoration"></div>
+
+    <!-- HEADER -->
+    <header class="top-header">
+
+        <a href="#" class="brand">
+            <span>VIOLANS</span>
+            <small>FLOWERS</small>
+        </a>
+
+        <div class="header-label">
+            FLORAL COLLECTION · 2026
+        </div>
+
+        <button class="download-btn" id="downloadPdf">
+            <span>↓</span>
+            PDF İNDİR
+        </button>
+
+    </header>
+
+
+    <!-- MAIN CATALOG -->
+    <main class="catalog-container">
+
+        <div class="catalog-heading">
+
+            <span class="eyebrow">A SPECIAL COLLECTION</span>
+
+            <h1>Flowers & Emotions</h1>
+
+            <p>Her çiçek, anlatılmamış bir hikâyedir.</p>
+
+        </div>
+
+
+        <!-- BOOK -->
+        <section class="book-area">
+
+            <button class="nav-btn prev-btn" id="prevBtn" aria-label="Önceki sayfa">
+                &#10094;
+            </button>
+
+
+            <div id="book" class="book">
+
+
+                <!-- PAGE 1 - COVER -->
+                <div class="page cover-page">
+
+                    <div class="cover-frame">
+
+                        <span class="cover-top">A FLORAL EXPERIENCE</span>
+
+                        <div class="cover-image">
+                            <img src="images/urun1.jpg" alt="Violans Flowers koleksiyonu">
+                        </div>
+
+                        <div class="cover-title">
+
+                            <span>THE ART OF</span>
+
+                            <h2>Flowers</h2>
+
+                            <span class="cover-brand">VIOLANS FLOWERS</span>
+
+                        </div>
+
+                        <span class="cover-bottom">COLLECTION 2026</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PAGE 2 - ABOUT -->
+                <div class="page">
+
+                    <div class="page-inner introduction-page">
+
+                        <span class="page-number">01</span>
+
+                        <span class="eyebrow">OUR STORY</span>
+
+                        <h2>Flowers have<br>their own language.</h2>
+
+                        <div class="intro-image">
+                            <img src="images/urun2.jpg" alt="Çiçek koleksiyonu">
+                        </div>
+
+                        <p>
+                            Her özel anın kendine ait bir rengi,
+                            her duygunun kendine ait bir çiçeği vardır.
+                            Violans Flowers ile güzelliğin en zarif
+                            hâlini keşfedin.
+                        </p>
+
+                        <span class="page-footer">VIOLANS FLOWERS</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PAGE 3 - PRODUCT -->
+                <div class="page">
+
+                    <div class="page-inner product-page">
+
+                        <span class="page-number">02</span>
+
+                        <span class="eyebrow">ROSE COLLECTION</span>
+
+                        <div class="product-image">
+                            <img src="images/urun3.jpg" alt="Çiçek tasarımı">
+                        </div>
+
+                        <h2>Romantic Bloom</h2>
+
+                        <p>
+                            Zarafetin ve sevginin en güzel
+                            ifadesi. Özel anlar için tasarlanmış
+                            romantik çiçek aranjmanı.
+                        </p>
+
+                        <span class="product-price">₺1.250,00</span>
+
+                        <span class="page-footer">VIOLANS FLOWERS</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PAGE 4 - PRODUCT -->
+                <div class="page">
+
+                    <div class="page-inner product-page">
+
+                        <span class="page-number">03</span>
+
+                        <span class="eyebrow">SIGNATURE COLLECTION</span>
+
+                        <div class="product-image">
+                            <img src="images/urun4.jpg" alt="Özel çiçek aranjmanı">
+                        </div>
+
+                        <h2>Pure Elegance</h2>
+
+                        <p>
+                            Doğanın sade güzelliğini
+                            zamansız bir tasarımla buluşturan
+                            özel koleksiyon.
+                        </p>
+
+                        <span class="product-price">₺1.450,00</span>
+
+                        <span class="page-footer">VIOLANS FLOWERS</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PAGE 5 - PRODUCT -->
+                <div class="page">
+
+                    <div class="page-inner product-page">
+
+                        <span class="page-number">04</span>
+
+                        <span class="eyebrow">SPECIAL MOMENTS</span>
+
+                        <div class="product-image">
+                            <img src="images/urun5.jpg" alt="Özel gün çiçekleri">
+                        </div>
+
+                        <h2>Blush Garden</h2>
+
+                        <p>
+                            Pastel tonların romantik
+                            uyumuyla hazırlanan benzersiz
+                            bir çiçek deneyimi.
+                        </p>
+
+                        <span class="product-price">₺1.650,00</span>
+
+                        <span class="page-footer">VIOLANS FLOWERS</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PAGE 6 - PRODUCT -->
+                <div class="page">
+
+                    <div class="page-inner product-page">
+
+                        <span class="page-number">05</span>
+
+                        <span class="eyebrow">PREMIUM COLLECTION</span>
+
+                        <div class="product-image">
+                            <img src="images/urun6.jpg" alt="Premium çiçek buketi">
+                        </div>
+
+                        <h2>Velvet Garden</h2>
+
+                        <p>
+                            Etkileyici renkler ve
+                            zarif dokunuşlarla hazırlanan
+                            premium aranjman.
+                        </p>
+
+                        <span class="product-price">₺1.850,00</span>
+
+                        <span class="page-footer">VIOLANS FLOWERS</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PAGE 7 - PRODUCT -->
+                <div class="page">
+
+                    <div class="page-inner product-page">
+
+                        <span class="page-number">06</span>
+
+                        <span class="eyebrow">NATURE COLLECTION</span>
+
+                        <div class="product-image">
+                            <img src="images/urun7.jpg" alt="Doğal çiçek tasarımı">
+                        </div>
+
+                        <h2>Garden Poetry</h2>
+
+                        <p>
+                            Doğanın eşsiz renklerinden
+                            ilham alan, her detayıyla
+                            özel bir tasarım.
+                        </p>
+
+                        <span class="product-price">₺1.550,00</span>
+
+                        <span class="page-footer">VIOLANS FLOWERS</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PAGE 8 - PRODUCT -->
+                <div class="page">
+
+                    <div class="page-inner product-page">
+
+                        <span class="page-number">07</span>
+
+                        <span class="eyebrow">EXCLUSIVE COLLECTION</span>
+
+                        <div class="product-image">
+                            <img src="images/urun8.jpg" alt="Özel koleksiyon çiçekleri">
+                        </div>
+
+                        <h2>Forever Bloom</h2>
+
+                        <p>
+                            Unutulmaz anlara eşlik edecek
+                            zarif ve etkileyici çiçek
+                            koleksiyonu.
+                        </p>
+
+                        <span class="product-price">₺2.100,00</span>
+
+                        <span class="page-footer">VIOLANS FLOWERS</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PAGE 9 - BACK COVER -->
+                <div class="page back-cover">
+
+                    <div class="back-cover-inner">
+
+                        <span class="eyebrow">WITH LOVE</span>
+
+                        <h2>Let flowers<br>speak for you.</h2>
+
+                        <div class="back-cover-flower">
+                            <img src="images/urun1.jpg" alt="Violans Flowers">
+                        </div>
+
+                        <h3>VIOLANS FLOWERS</h3>
+
+                        <p>Every flower tells a story.</p>
+
+                        <span class="cover-bottom">COLLECTION 2026</span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <button class="nav-btn next-btn" id="nextBtn" aria-label="Sonraki sayfa">
+                &#10095;
+            </button>
+
+        </section>
+
+
+
+        <!-- CONTROLS -->
+        <div class="catalog-controls">
+
+            <button id="mobilePrev" class="control-btn">
+                &#10094; GERİ
+            </button>
+
+            <div class="page-indicator">
+
+                <span id="pageCounter">1 / 9</span>
+
+                <div class="progress-track">
+                    <div id="progressBar"></div>
+                </div>
+
+            </div>
+
+            <button id="mobileNext" class="control-btn">
+                İLERİ &#10095;
+            </button>
+
+        </div>
+
+
+        <div class="catalog-hint">
+            Sayfaları çevirmek için okları kullanabilir veya kitabı sürükleyebilirsiniz.
+        </div>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <span>© 2026 VIOLANS DIGITAL</span>
+
+        <span>DESIGNED WITH ELEGANCE</span>
+
+    </footer>
+
+
+
+    <!-- LIBRARIES -->
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
